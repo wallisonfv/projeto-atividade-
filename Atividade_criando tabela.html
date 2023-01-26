@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade_criando tabela</title>
+    <script type="text/javascript">
+        function validarCampoEnviar() 
+        {
+            if(document.forms.CAMPO_LOGIN.value == "")
+            {
+                document.getElementById("MENSAGEM_LOGIN").innerHTML = "Favor informar o login";
+                return false;
+            }   
+            else
+        {
+            document.getElementById("MENSAGEM_LOGIN").innerHTML = "";
+            return true;
+        }
+            
+        }
+
+    </script>
+
+</head>
+<body>
+    <form>
+        <table border="1" width="600px">
+            <tr>
+                <td rowspan="25">PRIMEIRO</td>
+                <td colspan="11">CADASTRO DE PESSOAS</td>
+                <td rowspan="25">ULTIMO</td>
+            </tr>
+            <tr>
+                <td colspan="11">x</td>
+            </tr>
+            <tr>
+                <td>X</td>
+                <td>NOME</td>
+                <td colspan="9">
+                    <input type="text" name="CAMPO_NOME"/>
+                </td>
+            <tr>
+                <td>X</td>
+                <td>X</td>
+                <td colspan="9">Favor informar o seu nome</td>
+            </tr>
+                <td colspan="11">X</td>
+            </tr>
+            <tr>
+                <td>X</td>
+                <td>IDADE</td>
+                <td colspan="9">
+                    <input type="number" name="CAMPO_IDADE"/>
+            </tr>
+            <tr>
+                <td>X</td>
+                <td>X</td>
+                <td colspan="9">Favor informar a sua idade</td>
+            </tr>
+            <tr>
+                <td colspan="11">X</td>  
+            </tr>
+            <tr>
+                <td>X</td>
+                <td>LOGIN</td>
+                <td colspan="9">
+                    <input type="text" name="MENSAGEM_LOGIN"/>
+            </tr>
+            <tr>
+                <td>X</td>
+                <td>X</td>
+                <td colspan="9" id="MENSAGEM_LOGIN"></td>
+            </tr>
+            <tr>
+                <td colspan="11">X</td>
+            <tr>
+            <tr>
+                <td>X</td>
+                <td>SENHA</td>
+                <td colspan="9">
+                    <input type="text" name="CAMPO_SENHA"/>
+            </tr>
+            <tr>
+                <td>X</td>
+                <td>X</td>
+                <td colspan="9">Favor informar a sua senha</td>
+            </tr>
+            <tr>
+                <td colspan="11">X</td>
+            </tr>
+                <td>X</td>
+                <td>STATUS</td>
+                <td colspan="9">
+                    <input type="text" name="CAMPO_STATUS"/>
+            </tr>
+            <tr>
+                <td>X</td>
+                <td>X</td>
+                 <td colspan="9">favor informar o seu status</td>
+            </tr>
+            <tr>
+                <td colspan="11">O cadastro deu certo</td>
+            <tr>
+                <td>x</td>
+                <td>x</td>
+                <td>x</td>
+                <td colspan="2">
+                    <input type="button" value="LIMPAR"/>
+                <td>x</td>
+                <td colspan="2">
+                    <input type="button" value="CADASTRAR"/>
+                <td>x</td>
+                <td>x</td>
+                <td>X</td>
+            <tr>
+                <td colspan="11">X</td>
+            </tr>
+            </tr>
+                <td colspan="11">PESSOAS CADASTRADAS</td>    
+            </tr>    
+          <tr>
+            <td>CÓDIGO</td>
+            <td colspan="4">NOME</td>
+            <td>IDADE</td>
+            <td>LOGIN</td>
+            <td>SENHA</td>
+            <td>STATUS</td>
+            <td>EDITAR</td>
+            <td>EXCLUIR</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td colspan="4">MARIA ADRIANA</td>
+            <td>67</td>
+            <td>MEU_LOGIN</td>
+            <td>123</td>
+            <td>ATIVO</td>
+            <td>EDITAR</td>
+            <td>EXCLUIR</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td colspan="4">ROBERTO FAVARO</td>
+            <td>18</td>
+            <td>ROBERTO.FAVARO</td>
+            <td>444</td>
+            <td>ATIVO</td>
+            <td>EDITAR</td>
+            <td>EXCLUIR</td>
+          </tr>
+          <tr>
+            <td colspan="11">X</td>
+          </tr>
+        </table>
+    </form>
+    
+</body>
+</html>
